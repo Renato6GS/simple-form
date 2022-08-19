@@ -1,0 +1,72 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --red: #e40066;
+
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36), 2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('/fonts/Lato-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('/fonts/Lato-Bold.woff2') format('woff2');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 3rem auto 0;
+  margin-bottom: 150px;
+  background-color: var(--white);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+td,
+th {
+  border-bottom: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+tbody tr:hover {
+  background: var(--black);
+  color: var(--white);
+}

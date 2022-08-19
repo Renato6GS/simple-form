@@ -1,0 +1,11 @@
+.btnDelete {
+  margin: 0 auto;
+  padding: 5px 12px;
+  color: var(--white);
+  background-color: var(--red);
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
